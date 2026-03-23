@@ -1,0 +1,102 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}      
+\usepackage[utf8]{inputenc}    
+\usepackage[spanish]{babel}    
+\usepackage{csquotes} 
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{paperwidth=180mm, paperheight=110mm}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% --- COLORES SAN MARCOS ---
+\definecolor{sanmarcosrojo}{HTML}{A41E22}
+\definecolor{sanmarcosnegro}{RGB}{0,0,0}
+\definecolor{sanmarcosblanco}{RGB}{255,255,255}
+\definecolor{grisclarito}{RGB}{230,230,230}
+\definecolor{textogrisoscuro}{RGB}{60,60,60}
+
+\setbeamercolor{block body}{bg=grisclarito, fg=textogrisoscuro}
+\setbeamercolor{block title}{bg=sanmarcosrojo, fg=white} 
+\setbeamerfont{institute}{size=\large}
+
+% --- CONFIGURACIÓN DE COLORES DEL TEMA ---
+\setbeamercolor{structure}{fg=sanmarcosrojo} 
+\setbeamercolor{palette primary}{bg=sanmarcosrojo, fg=sanmarcosblanco}
+\setbeamercolor{palette secondary}{bg=sanmarcosblanco, fg=sanmarcosnegro}
+\setbeamercolor{palette tertiary}{bg=sanmarcosnegro, fg=sanmarcosblanco}
+\setbeamercolor{frametitle}{bg=sanmarcosblanco, fg=sanmarcosrojo}
+\setbeamerfont{subtitle}{size=\Large, series=\bfseries}
+\setbeamercolor{titlelike}{bg=sanmarcosrojo, fg=sanmarcosblanco}
+\setbeamercolor{itemize item}{fg=sanmarcosrojo}
+\setbeamercolor{itemize subitem}{fg=sanmarcosnegro}
+
+% --- ESTILO DE CÓDIGO ---
+\definecolor{myblue}{rgb}{0.2,0.2,0.8}
+\definecolor{mygreen}{rgb}{0.0,0.5,0.0}
+\definecolor{myred}{rgb}{0.8,0.2,0.2}
+\definecolor{bggray}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{rstyle}{
+    language=R,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{myblue},
+    commentstyle=\color{mygreen},
+    stringstyle=\color{myred},
+    backgroundcolor=\color{bggray},
+    frame=single,
+    rulecolor=\color{gray},
+    breaklines=true,
+    tabsize=2,
+    showstringspaces=false
+}
+
+% --- DATOS DE PORTADA ---
+\title{{{CURSO}} - {{LECCION}}}
+\subtitle{{{TITULO}}}   
+\author{\textbf{{{AUTOR}}}} % Corregido: Llave de cierre agregada
+\institute[UNMSM]{\textcolor{sanmarcosrojo}{Universidad Nacional Mayor de San Marcos}}
+\date{Semestre 2026-I}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\begin{document}
+
+\section{Facultad de Ciencias Económicas}
+\subsection{Plan de Estudios 2025}
+
+% --- PORTADA ---
+\begin{frame} % Corregido: Uso de entorno begin{frame}
+    \centering
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.15\linewidth]{logoSM.png}
+    \end{figure}
+    \titlepage
+\end{frame}
+
+% --- CONTENIDO GENERADO POR PYTHON ---
+{{CONTENIDO}}
+
+% --- BIBLIOGRAFÍA ---
+% Corregido: Se eliminó el \begin{frame}{} vacío problemático
+\begin{frame}[allowframebreaks]{Bibliografía}
+    \begin{thebibliography}{99}
+        \bibitem{leon2015}
+        \textcolor{sanmarcosnegro}{
+        Samuelson, P. \& Nordhaus, W. (2010). \textit{Economía con aplicaciones a Latinoamérica}. Edición decimonovena. Mc Graw-Hill Interamericana Editores.}
+
+        \bibitem{rivera2017}
+        \textcolor{sanmarcosnegro}{
+        Rivera, I. (2017). 
+        \textit{Principios de macroeconomía: un enfoque de sentido común}. 
+        Fondo Editorial PUCP.}
+    \end{thebibliography}
+\end{frame}
+
+\end{document}
