@@ -38,6 +38,6 @@ README.md: Documentación del proyecto.
 🎓 Aplicación Académica
 Este flujo está diseñado para estudiantes e investigadores que buscan optimizar su tiempo al crear material de exposición basado en papers, reportes del INEI o bases de datos económicas.
 
-Desarrollado por: [Tu Nombre/Anjaly Arcos]
+Desarrollado por: Anjaly Arcos
 
-Organización: Mundo Social / UNMSM
+Organización: Mundo Social
