@@ -30,9 +30,6 @@ Ingresa los datos: El script te pedirá el nombre del curso, título y autor par
 beamer_generator.py: Script principal basado en funciones/clases.
 
 mi_plantilla.tex: Archivo base de LaTeX con los marcadores {{TITULO}}, {{CONTENIDO}}, etc.
-
-requirements.txt: Lista de librerías necesarias.
-
 README.md: Documentación del proyecto.
 
 🎓 Aplicación Académica
